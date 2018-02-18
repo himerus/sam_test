@@ -10,7 +10,7 @@ class SamTestCommands extends DrushCommands implements SiteAliasManagerAwareInte
   use SiteAliasManagerAwareTrait;
 
   /**
-   * List implementations of a given event and optionally edit one.
+   * Test to run $this->siteAliasManager()->getSelf();
    *
    * @command sam:test
    * @aliases sam-test
@@ -20,5 +20,18 @@ class SamTestCommands extends DrushCommands implements SiteAliasManagerAwareInte
    */
   public function example() {
     $alias = $this->siteAliasManager()->getSelf();
+  }
+
+  /**
+   * Test to run $this->siteAliasManager()->searchLocations();
+   *
+   * @command sam:test2
+   * @aliases sam-test2
+   * @usage drush sam:test2
+   *   Test that `implements SiteAliasManagerAwareInterface` is working correctly.
+   * @handle-remote-commands true
+   */
+  public function example_two() {
+    $alias = $this->siteAliasManager()->searchLocations();
   }
 }
