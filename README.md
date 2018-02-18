@@ -11,3 +11,5 @@ Any call to `$this->siteAliasManager()->FUNCTION` results in the following:
 
 `drush @my-functioning-alias sam:test` results in:
 > [error]  Error: Call to a member function getSelf() on null in Drupal\sam_test\Commands\SamTestCommands->example() (line 22 of modules/custom/sam_test/src/Commands/SamTestCommands.php) #0 [internal function]: Drupal\sam_test\Commands\SamTestCommands->example(Array)
+
+See: [drush-ops/drush/issues/3394](https://github.com/drush-ops/drush/issues/3394)
