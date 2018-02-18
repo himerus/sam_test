@@ -1,0 +1,5 @@
+name: sam_test
+type: module
+description: Module to test implementing the SiteAliasManagerAwareInterface in a Drush command.
+package: Custom
+core: 8.x

@@ -1,0 +1,5 @@
+services:
+  sam_test.commands:
+    class: \Drupal\sam_test\Commands\SamTestCommands
+    tags:
+      - { name: drush.command }
